@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mahisoft Test Technique @ Daniel Gallo 16/07/2019 2:10PM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"/>
+  <style>
+    .js-message-unions-body {
+      background: hsl(141, 71%,  48%);
+    }
+    .js-message-prices-bod {
+      font-size: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="section">
+      <div class="columns">
+        <div class="column">
+          <div class="field has-addons">
+            <div class="control">
+              <input
+                class="input js-number1-input"
+                type="text"
+                placeholder="Enter your number one"
+              />
+            </div>
+            <div class="control">
+              <input
+                class="input js-number2-input"
+                type="text"
+                placeholder="Enter your number two"
+              />
+            </div>
+            <div class="control">
+              <a class="button is-primary js-friendly-button">
+                Verific
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <article class="message is-hidden js-message">
+            <div class="message-header">
+              <p>Result Friendly</p>
+              <button class="delete" aria-label="delete"></button>
+            </div>
+            <div class="message-body js-message-body">
+
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="field has-addons">
+            <div class="control">
+              <input
+                class="input js-prices-input"
+                type="text"
+                placeholder="Enter your array with prices separates with comma example: 1,2,1,5,2.1,6,3"
+              />
+            </div>
+            <div class="control">
+              <input
+                class="input js-day-input"
+                type="text"
+                placeholder="Enter any day example: 0 o 1 o 2 o 3 o 4 o 5 o 6"
+              />
+            </div>
+            <div class="control">
+              <a class="button is-primary js-prices-button">
+                Calculate
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <article class="message is-hidden is-info js-message-prices">
+            <div class="message-header">
+              <p>Result Gain</p>
+              <button class="delete" aria-label="delete"></button>
+            </div>
+            <div class="message-body js-message-prices-body">
+
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="field has-addons">
+            <div class="control">
+              <input
+                class="input js-unions-one-input"
+                type="text"
+                placeholder="Enter your array list No 1 separates with comma example: 1,2,3,4,5"
+              />
+            </div>
+            <div class="control">
+                <input
+                class="input js-unions-two-input"
+                type="text"
+                placeholder="Enter your array list No 2 separates with comma example: 1,2,3,4,5"
+              />
+            </div>
+            <div class="control">
+              <a class="button is-primary js-unions-button">
+                Union List
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <article class="message is-hidden is-info js-message-unions">
+            <div class="message-header">
+              <p>Result Union List</p>
+              <button class="delete" aria-label="delete"></button>
+            </div>
+            <div class="message-body js-message-unions-body is-block is-size-5">
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
